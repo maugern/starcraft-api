@@ -1,0 +1,9 @@
+fr.maugern.starcraft.api
+fr.maugern.starcraft.config
+fr.maugern.starcraft.dto.entity
+fr.maugern.starcraft.dto.entity.ladder
+fr.maugern.starcraft.dto.entity.ladders
+fr.maugern.starcraft.dto.entity.matchhistory
+fr.maugern.starcraft.dto.entity.profile
+fr.maugern.starcraft.model
+fr.maugern.starcraft.model.entity
