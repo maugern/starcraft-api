@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>starcraft</groupId>
 	<artifactId>starcraft-api</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>StarCraft Java api connector</name>
@@ -21,7 +21,7 @@
 		<developer>
 			<id>maugern</id>
 			<name>Nicolas Mauger</name>
-			<email>contact@maugern.fr</email>
+			<email>contact[at]maugern.fr</email>
 		</developer>
 	</developers>
 
