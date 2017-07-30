@@ -32,8 +32,7 @@ public class MatchHistorySerializationTest {
         assertEquals(matchHistory.getMatches().get(0).getType(), "SOLO");
         assertEquals(matchHistory.getMatches().get(0).getDecision(), Decision.WIN);
         assertEquals(matchHistory.getMatches().get(0).getSpeed(), "FASTER");
-        assertEquals(matchHistory.getMatches().get(0).getDate(), new Long(1498249960L));
-        assertEquals(matchHistory.getMatches().get(0).getDate().longValue(), new Date(1498249960L).getTime());
+        assertEquals(matchHistory.getMatches().get(0).getDate(), new Date(1498249960L * 1000));
 
     }
     
@@ -44,7 +43,7 @@ public class MatchHistorySerializationTest {
         match.setType("SOLO");
         match.setDecision(Decision.WIN);
         match.setSpeed("FASTER");
-        match.setDate(1497477053L);
+        match.setDate(new Date(1498249960L));
         
         MatchHistory matchHistories = new MatchHistory();
         matchHistories.setMatches(Arrays.asList(match));

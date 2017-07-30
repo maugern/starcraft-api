@@ -6,6 +6,7 @@
 package fr.maugern.starcraft.dto.entity.matchhistory;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import fr.maugern.starcraft.model.Decision;
 import lombok.Data;
@@ -21,5 +22,14 @@ public class Match implements Serializable {
     private String type;
     private Decision decision;
     private String speed;
-    private Long date;   
+    private Date date;
+    
+    /**
+     * We have to redefine date here because blizzard give epoch
+     * in second, and {@link java.util.Date#getTime()} is in millisecond.  
+     * @param date
+     */
+    public void setDate(Date date) {
+        this.date = new Date(date.getTime() * 1000);
+    }
 }

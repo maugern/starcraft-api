@@ -19,4 +19,13 @@ public class Achievement implements Serializable {
     private static final long serialVersionUID = -5995762775747145640L;
     private Long achievementId;
     private Date completionDate;
+    
+    /**
+     * We have to redefine date here because blizzard give epoch
+     * in second, and {@link java.util.Date#getTime()} is in millisecond.  
+     * @param date
+     */
+    public void setDate(Date completionDate) {
+        this.completionDate = new Date(completionDate.getTime() * 1000);
+    }
 }
