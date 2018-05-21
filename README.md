@@ -5,6 +5,8 @@ A fast Java connector/serializer for Blizzard's StraCraft 2 API
 All ladders, profiles and matches histories are serialized with [the fastest Java JSON parser](https://github.com/alibaba/fastjson).
 This project also use the anti java verbosity [lombok project](https://projectlombok.org/)
 
+Javadoc is available at [maugern.github.io/starcraft-api](https://maugern.github.io/starcraft-api/) or in the ``/docs`` folder.
+
 ## Get Started
 Exemple of use :
 ```java
